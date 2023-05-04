@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Racing+Sans+One&family=Sriracha&display=swap");
+.logo {
+  padding-top: 10px;
+  width: 4rem;
+}
+@media (max-width: 600px) {
+  .logo {
+    padding-top: 7px;
+  }
+}
+
+.mapIcon {
+  text-align: center;
+  width: 10rem;
+}
+@media (max-width: 600px) {
+  .mapIcon {
+    text-align: right;
+    margin-right: 1rem;
+  }
+}
+
+.map,
+.menu {
+  width: 2.3rem;
+}
+
+.menuIcon {
+  text-align: center;
+  width: 10rem;
+}
+@media (max-width: 600px) {
+  .menuIcon {
+    text-align: left;
+    margin-left: 1rem;
+  }
+}
+
+* {
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  font-family: "Kalam", cursive;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 2px solid red;
+  box-shadow: 2px 1px 10px 0px black;
+  position: fixed;
+  background-color: white;
+  height: 5rem;
+}
+@media (max-width: 600px) {
+  .headerContainer {
+    flex-direction: column;
+  }
+}
+
+.logoContainer {
+  text-align: center;
+  width: 25rem;
+}
+@media (max-width: 600px) {
+  .logoContainer {
+    position: absolute;
+  }
+}
+
+.titleContainer {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .titleContainer {
+    width: 0;
+  }
+}
+
+.restoLink {
+  text-decoration: none;
+  list-style: none;
+}
+
+#restoTitle {
+  font-family: "Racing Sans One", cursive;
+  font-size: 3.3rem;
+  color: black;
+}
+@media (max-width: 600px) {
+  #restoTitle {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.cardContainer {
+  width: 20rem;
+}
+@media (max-width: 600px) {
+  .cardContainer {
+    width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #restoCard {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.mapMenuContainer {
+  display: flex;
+  width: 11rem;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  .mapMenuContainer {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+}
+
+.logo {
+  padding-top: 10px;
+  width: 4rem;
+}
+@media (max-width: 600px) {
+  .logo {
+    padding-top: 7px;
+  }
+}
+
+.mapIcon {
+  text-align: center;
+  width: 10rem;
+}
+@media (max-width: 600px) {
+  .mapIcon {
+    text-align: right;
+    margin-right: 1rem;
+  }
+}
+
+.map,
+.menu {
+  width: 2.3rem;
+}
+
+.menuIcon {
+  text-align: center;
+  width: 10rem;
+}
+@media (max-width: 600px) {
+  .menuIcon {
+    text-align: left;
+    margin-left: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

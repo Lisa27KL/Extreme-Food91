@@ -1,0 +1,33 @@
+@import"./library/utils/mixins.scss";
+@import"./library/utils/variables.scss";
+@import"./library/utils/iconsLogos.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Racing+Sans+One&family=Sriracha&display=swap');
+$font-1: 'Kalam', cursive;
+$font-2: 'Racing Sans One', cursive;
+$font-3: 'Sriracha', cursive;
+
+* {
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    width: 100%;
+    display: flex;
+    font-family: $font-1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    @include mobile {
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+  }

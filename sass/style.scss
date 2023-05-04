@@ -1,0 +1,17 @@
+@import"./setting.scss";
+@import"./library/utils/variables.scss";
+@import"./library/utils/mixins.scss";
+
+//Pages
+@import"./library/pages/index.scss";
+@import"./library/pages/page.scss";
+
+//Header and Footer
+@import"./library/common/header.scss";
+@import"./library/common/footer.scss";
+
+//Menu
+@import"./library/common/navbar.scss";
+
+//Icons
+@import"./library/utils/iconsLogos.scss";
