@@ -116,7 +116,8 @@ body {
 }
 
 .cardContainer {
-  width: 20rem;
+  height: 5rem;
+  width: 15rem;
 }
 @media (max-width: 600px) {
   .cardContainer {
@@ -124,11 +125,25 @@ body {
   }
 }
 
+.restoCard {
+  font-family: "Kalam", cursive;
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 5rem;
+  width: 15rem;
+}
 @media (max-width: 600px) {
-  #restoCard {
+  .restoCard {
     visibility: hidden;
     height: 0;
   }
+}
+
+.cardTitle {
+  font-family: "Kalam", cursive;
+  font-size: 1.7rem;
+  padding-top: 1.3rem;
+  text-align: center;
 }
 
 .mapMenuContainer {
@@ -144,6 +159,74 @@ body {
     flex-direction: row-reverse;
     align-items: flex-end;
   }
+}
+
+.menuCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  cursor: pointer;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  border-radius: 20px;
+  border: 2px solid grey;
+  box-shadow: 4px 3px 11px 0px grey;
+  border-radius: 1rem;
+  opacity: 0;
+  position: relative;
+  top: 1.7rem;
+  right: 33rem;
+  transition: 0.4s cubic-bezier(0.51, 0.52, 0.87, 0.88);
+}
+
+.restoCard:hover .menuCards {
+  visibility: visible;
+  opacity: 1;
+  width: 45rem;
+  height: 20rem;
+}
+
+.cardsImgContainer {
+  visibility: hidden;
+  width: 10rem;
+  height: 7rem;
+  padding: 11px;
+  display: flex;
+  flex-direction: column-reverse;
+  opacity: 0;
+}
+.cardsImgContainer:hover {
+  visibility: visible;
+  width: 9.5rem;
+  height: 7rem;
+  border: 2px solid grey;
+  box-shadow: 4px 3px 11px 0px grey;
+  border-radius: 1rem;
+  transform: scale(1.03);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.cardsImg {
+  width: 5rem;
+  height: 3.5rem;
+  margin-left: 1.7rem;
+}
+
+.cards {
+  font-family: "Sriracha", cursive;
+  font-size: 15px;
+  text-align: center;
+}
+
+.restoCard:hover .cardsImgContainer {
+  transition: 0.1s ease-in-out;
+  visibility: visible;
+  height: 7rem;
+  opacity: 1;
 }
 
 .logo {
