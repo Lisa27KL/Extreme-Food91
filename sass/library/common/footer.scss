@@ -1,0 +1,70 @@
+.footerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid red;
+    box-shadow: 2px 1px 10px 0px black;
+    background-color: black;
+    height: auto;
+  
+    // @include mobile {
+    //   flex-direction: column;
+    // }
+  }
+
+  .footerLogoContainer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .footerLogo{
+    width: 4rem;
+    background-color: white;
+  }
+
+  .footerInfosContainer{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    padding-bottom: 15px;
+    width: 95%;
+    padding: 10px;
+
+    @include mobile{
+        flex-direction: column;
+        text-align: center;
+    }
+  }
+
+  .footerCardContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .footerTitles{
+    font-family: $font-2;
+    font-size: 17px;
+    color: red;
+  }
+
+  .footerCard{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerCardLinks{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  .footerReseauLogos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+  }

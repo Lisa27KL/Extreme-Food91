@@ -14,17 +14,37 @@
     text-align: right;
     margin-right: 1rem;
   }
+  // @include tablet{
+  //   width: 5rem;
+  // }
 }
-.map,
-.menu {
+.map{
   width: 2.3rem;
 }
 
-.menuIcon {
-  text-align: center;
-  width: 10rem;
-  @include mobile {
-    text-align: left;
-    margin-left: 1rem;
+.seeMoreBtn{
+  background-color: rgba(0, 0, 0, 0.897);
+  color: white;
+  border: 2px solid red;
+  border-radius: 5px;
+
+  &:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.09);
+    cursor: pointer;
+  }
+}
+
+.reseauLogos{
+  margin-top: 1rem;
+  padding: 8px;
+  width: 3rem;
+  border: 2px solid white;
+  border-radius: 3rem;
+  &:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+    box-shadow: inset red -5px -2px 5px 0px;;
   }
 }

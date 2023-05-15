@@ -20,20 +20,34 @@
   }
 }
 
-.map,
-.menu {
+.map {
   width: 2.3rem;
 }
 
-.menuIcon {
-  text-align: center;
-  width: 10rem;
+.seeMoreBtn {
+  background-color: rgba(0, 0, 0, 0.897);
+  color: white;
+  border: 2px solid red;
+  border-radius: 5px;
 }
-@media (max-width: 600px) {
-  .menuIcon {
-    text-align: left;
-    margin-left: 1rem;
-  }
+.seeMoreBtn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.reseauLogos {
+  margin-top: 1rem;
+  padding: 8px;
+  width: 3rem;
+  border: 2px solid white;
+  border-radius: 3rem;
+}
+.reseauLogos:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out 0s;
+  box-shadow: inset red -5px -2px 5px 0px;
 }
 
 * {
@@ -60,6 +74,185 @@ body {
     padding: 0;
     justify-content: center;
   }
+}
+
+.mainContainer {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .mainContainer {
+    padding-top: 5rem;
+  }
+}
+
+.deliciousBanner {
+  background-color: black;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .deliciousBanner {
+    height: 12rem;
+  }
+}
+
+.deliciousContainer {
+  width: 29rem;
+  height: 13.5rem;
+  border: 3px solid red;
+  box-shadow: -4px 3px 5px 0px black;
+  background-color: white;
+  background-size: contain;
+  overflow: hidden;
+  background-color: white;
+  background-image: url("/Images/Logos/Logo-1.webp");
+  background-size: contain;
+  animation: defilement 8s cubic-bezier(1, -0.88, 0.27, 1.55) infinite;
+}
+@media (max-width: 600px) {
+  .deliciousContainer {
+    height: 76%;
+  }
+}
+
+@keyframes defilement {
+  0% {
+    background-image: url("/Images/Sandwich/SandwichBanner.webp");
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url("/Images/Burgers/BurgerBanner.webp");
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url("/Images/Pizza/PizzaBanner.webp");
+    background-repeat: no-repeat;
+  }
+}
+.deliciousSlides {
+  width: 100%;
+  height: 0;
+  padding-top: 45%;
+  background-size: contain;
+}
+
+.meals {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 1200px) {
+  .meals {
+    height: 30rem;
+  }
+}
+@media (max-width: 600px) {
+  .meals {
+    overflow: scroll;
+    height: 114rem;
+    justify-content: flex-end;
+  }
+}
+
+.mealsPart1,
+.mealsPart2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+@media (max-width: 1200px) {
+  .mealsPart1,
+  .mealsPart2 {
+    width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .mealsPart1,
+  .mealsPart2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.mealsCards {
+  width: 20%;
+  height: 15rem;
+  background-color: white;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.623);
+}
+.mealsCards:hover {
+  box-shadow: 5px 5px 5px 0px rgba(255, 0, 0, 0.6392156863);
+  cursor: pointer;
+  transform: rotate(2deg);
+}
+@media (max-width: 1200px) {
+  .mealsCards {
+    width: 10rem;
+    height: 11rem;
+  }
+}
+@media (max-width: 600px) {
+  .mealsCards {
+    width: 15rem;
+    height: 13rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.mealsLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 16rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.mealsImg {
+  width: 70%;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .mealsImg {
+    width: 60%;
+  }
+}
+
+.infosMeals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mealsTitles {
+  text-align: center;
+  font-family: "Racing Sans One", cursive;
+  color: black;
+  font-size: 25px;
+}
+@media (max-width: 1200px) {
+  .mealsTitles {
+    font-size: 20px;
+  }
+}
+
+.seeMoreBtn {
+  width: 8rem;
+  height: 2rem;
 }
 
 .headerContainer {
@@ -114,6 +307,11 @@ body {
     height: 0;
   }
 }
+@media (max-width: 1200px) {
+  #restoTitle {
+    font-size: 1.8rem;
+  }
+}
 
 .cardContainer {
   height: 5rem;
@@ -121,7 +319,7 @@ body {
 }
 @media (max-width: 600px) {
   .cardContainer {
-    width: 0;
+    width: 100%;
   }
 }
 
@@ -138,12 +336,22 @@ body {
     height: 0;
   }
 }
+@media (max-width: 1200px) {
+  .restoCard {
+    width: 9rem;
+  }
+}
 
 .cardTitle {
   font-family: "Kalam", cursive;
   font-size: 1.7rem;
   padding-top: 1.3rem;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .cardTitle {
+    padding-top: 3rem;
+  }
 }
 
 .mapMenuContainer {
@@ -178,7 +386,8 @@ body {
   opacity: 0;
   position: relative;
   top: 1.7rem;
-  right: 33rem;
+  background-color: white;
+  right: 35rem;
   transition: 0.4s cubic-bezier(0.51, 0.52, 0.87, 0.88);
 }
 
@@ -186,7 +395,21 @@ body {
   visibility: visible;
   opacity: 1;
   width: 45rem;
-  height: 20rem;
+  height: 17rem;
+  overflow: scroll;
+}
+@media (max-width: 600px) {
+  .restoCard:hover .menuCards {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .restoCard:hover .menuCards {
+    right: 25rem;
+    width: 42rem;
+    height: 15rem;
+  }
 }
 
 .cardsImgContainer {
@@ -209,11 +432,27 @@ body {
   cursor: pointer;
   opacity: 1;
 }
+@media (max-width: 600px) {
+  .cardsImgContainer {
+    visibility: visible;
+    opacity: 1;
+    width: 6rem;
+    height: 4rem;
+    padding: 0px;
+  }
+}
 
 .cardsImg {
   width: 5rem;
   height: 3.5rem;
   margin-left: 1.7rem;
+}
+@media (max-width: 600px) {
+  .cardsImg {
+    width: 4rem;
+    height: 2.5rem;
+    margin-left: 0.7rem;
+  }
 }
 
 .cards {
@@ -221,12 +460,86 @@ body {
   font-size: 15px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .cards {
+    font-size: 10px;
+    font-family: "Racing Sans One", cursive;
+  }
+}
 
 .restoCard:hover .cardsImgContainer {
   transition: 0.1s ease-in-out;
   visibility: visible;
   height: 7rem;
   opacity: 1;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: 2px solid red;
+  box-shadow: 2px 1px 10px 0px black;
+  background-color: black;
+  height: auto;
+}
+
+.footerLogoContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.footerLogo {
+  width: 4rem;
+  background-color: white;
+}
+
+.footerInfosContainer {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  padding-bottom: 15px;
+  width: 95%;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .footerInfosContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footerCardContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.footerTitles {
+  font-family: "Racing Sans One", cursive;
+  font-size: 17px;
+  color: red;
+}
+
+.footerCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerCardLinks {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.footerReseauLogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -250,20 +563,34 @@ body {
   }
 }
 
-.map,
-.menu {
+.map {
   width: 2.3rem;
 }
 
-.menuIcon {
-  text-align: center;
-  width: 10rem;
+.seeMoreBtn {
+  background-color: rgba(0, 0, 0, 0.897);
+  color: white;
+  border: 2px solid red;
+  border-radius: 5px;
 }
-@media (max-width: 600px) {
-  .menuIcon {
-    text-align: left;
-    margin-left: 1rem;
-  }
+.seeMoreBtn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.reseauLogos {
+  margin-top: 1rem;
+  padding: 8px;
+  width: 3rem;
+  border: 2px solid white;
+  border-radius: 3rem;
+}
+.reseauLogos:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out 0s;
+  box-shadow: inset red -5px -2px 5px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
