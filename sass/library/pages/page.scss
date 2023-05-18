@@ -1,0 +1,71 @@
+.burgersContainer {
+  width: 95%;
+  background-color: white;
+}
+
+.burgersTitle,
+.menusDuosTitle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: red;
+  text-align: center;
+  border: 3px solid black;
+  width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2.5rem;
+  font-family: $font-1;
+}
+
+.burgersBlocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50rem;
+}
+
+.burgersBlockBox {
+  background-color: white;
+  width: 14rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid black;
+  justify-content: space-evenly;
+  box-shadow: -4px 6px 10px grey;
+}
+
+.burgerMiniTitle {
+  font-size: 25px;
+  font-family: $font-3;
+  width: 100%;
+  text-align: center;
+}
+
+.imgBurgers {
+  width: 11rem;
+  height: 8rem;
+}
+
+.price {
+  font-family: $font-2;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.imgDrinksFries {
+  width: 4rem;
+  height: 4rem;
+}
+
+.menusDuos{
+    border: 2px dotted black;
+    width: 15rem;
+}
