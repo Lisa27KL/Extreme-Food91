@@ -1,10 +1,25 @@
-.burgersContainer {
+#burgerContainer,
+#pizzaContainer,
+#sandwichContainer,
+#saladContainer,
+#chipsContainer,
+#extraContainer,
+#kidsMealsContainer,
+#dessertContainer {
   width: 95%;
   background-color: white;
 }
 
 .burgersTitle,
-.menusDuosTitle {
+.menusDuosTitle,
+.pizzasTitle,
+.pizzWichTitle,
+.sandwichsTitle,
+.saladsTitle,
+.chipsTitle,
+.extrasTitle,
+.kidsMealsTitle,
+.dessertTitle{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -13,44 +28,89 @@
   background-color: red;
   text-align: center;
   border: 3px solid black;
-  width: 25rem;
+  width: 30%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: white;
   font-size: 2.5rem;
   font-family: $font-1;
+
+  @include tablet{
+    width: 50%;
+    font-size: 2rem;
+  }
+
+  @include mobile{
+    width: 100%;
+  }
 }
 
-.burgersBlocks {
+.burgersBlocks,
+.pizzasBlocks,
+.sandwichsBlocks,
+.chipsBlocks,
+.kidsMealsBlocks{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 50rem;
+  align-content: space-around;
+  height: auto;
+
+  @include mobile{
+    flex-direction: column;
+  }
 }
 
-.burgersBlockBox {
+.burgersBlockBox{
   background-color: white;
   width: 14rem;
   height: 16rem;
+  margin-bottom: 1.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 4px solid black;
   justify-content: space-evenly;
   box-shadow: -4px 6px 10px grey;
+
+  @include tablet{
+    width: 13rem;
+    height: 13rem; 
+  }
+
+  @include mobile{
+    width: 90%;
+  }
 }
 
-.burgerMiniTitle {
+.burgerMiniTitle,
+.pizzaMiniTitle,
+.sandwichMiniTitle,
+.saladMiniTitle,
+.chipsMiniTitle,
+.extraMiniTitle,
+.kidsMealsMiniTitle,
+.dessertMiniTitle{
   font-size: 25px;
-  font-family: $font-3;
+  font-family: $font-2;
   width: 100%;
   text-align: center;
 }
 
-.imgBurgers {
+.imgBurgers,
+.imgPizzas,
+.imgChips,
+.imgExtras,
+.imgKidsMeals,
+.imgDessert {
   width: 11rem;
   height: 8rem;
+
+  @include tablet{
+    width: 7rem;
+    height: 6rem;
+  }
 }
 
 .price {
@@ -58,14 +118,280 @@
   font-size: 20px;
   width: 100%;
   text-align: center;
+  color: darkblue;
+}
+
+.menusDuosContainer,
+.pizzWichContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto
+  
+  // @include mobile{
+  //   align-items: center;
+  // }
+
 }
 
 .imgDrinksFries {
   width: 4rem;
   height: 4rem;
+  
 }
 
-.menusDuos{
-    border: 2px dotted black;
-    width: 15rem;
+.menusDuosBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  align-items: stretch;
+  align-content: space-between;
+
+  @include mobile{
+    height: auto;
+    width: 100%;
+  }
+}
+.menusDuos,
+.pizzWich {
+  border: 3px dashed #ffa600;
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  
+  @include mobile{
+    width: 100%;
+
+  }
+
+}
+
+.menusDuosOffers {
+  font-family: $font-2;
+  font-size: 30px;
+  color: red;
+}
+
+.menuDuoMiniTitle,
+.pizzWichMiniTitle {
+  font-family: $font-3;
+  font-size: 25px;
+}
+
+.pizzasBlockBox,
+.sandwichsBlockBox {
+  background-color: white;
+  width: 30%;
+  height: 16rem;
+  margin-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid black;
+  justify-content: space-evenly;
+  box-shadow: -4px 6px 10px grey;
+
+  @include mobile{
+    width: 100%;
+  }
+}
+
+.pizzaSizes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  width: 75%;
+  border: 3px dashed #ffa600;
+  margin-bottom: 1rem;
+
+  @include mobile{
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.pizzaSizesInfos{
+  font-family: $font-2;
+  color: red;
+  font-size: 30px;
+  padding: 10px;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.pizzWichBase{
+  font-family: $font-2;
+  margin-bottom: 1.5rem;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 50%;
+
+  @include mobile{
+    font-size: 25px;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.pizzWichBaseCream{
+  color: skyblue;
+  width: 20%;
+  font-size: 30px;
+
+  @include mobile{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.pizzWichBaseTomato{
+  color: red;
+  width: 20%;
+  font-size: 30px;
+
+  @include mobile{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.pizzWichBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+
+  @include mobile{
+    justify-content: center;
+  }
+   }
+
+.infosPizza,
+.infosPizzWich,
+.infosSandwich,
+.infosSalad,
+.infosChips,
+.infosExtra {
+  font-size: 24px;
+  font-family: $font-1;
+  text-align: center;
+}
+
+.imgSandwichs {
+  width: 15rem;
+  height: 7rem;
+
+  @include tablet{
+    width: 10rem;
+    height: 5rem;
+  }
+}
+
+.saladsBlocks,
+.chipsBlocks,
+.kidsMealsBlocks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    height: auto;
+
+    @include mobile{
+      justify-content: center;
+    }
+}
+
+.saladsBlockBox,
+.chipsBlockBox,
+.kidsMealsBlockBox{
+      margin-right: 3rem;
+      background-color: white;
+    width: 30%;
+    height: 16rem;
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid black;
+    justify-content: space-evenly;
+    box-shadow: -4px 6px 10px grey;
+  
+
+  @include mobile{
+    width: 100%;
+    height: 14rem;
+    margin-right: 0;
+  }
+}
+
+
+.imgSalads{
+  width: 16rem;
+  height: 8rem;
+
+  @include mobile{
+    width: 12rem;
+    height: 7rem;
+  }
+}
+
+.extrasBlockBox,
+.dessertsBlockBox{
+  margin-right: 3rem;
+  background-color: white;
+width: 28%;
+height: 17rem;
+margin-bottom: 1.3rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 4px solid black;
+justify-content: space-evenly;
+box-shadow: -4px 6px 10px grey;
+
+@include tablet{
+  width: 30% ;
+  height: 16rem;
+  margin-right: 0;
+}
+
+@include mobile{
+  width: 100%;
+  height: 14rem;
+}
+}
+
+.price1, .price2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+    width: 40%;
+}
+
+.extrasBlocks,
+.dessertsBlocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  height: auto;
 }

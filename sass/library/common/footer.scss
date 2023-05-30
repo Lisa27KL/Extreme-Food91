@@ -44,6 +44,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+
+    @include mobile{
+      margin-bottom: 1rem;
+    }
   }
   .footerTitles{
     font-family: $font-2;
