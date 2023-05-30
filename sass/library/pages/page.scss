@@ -228,6 +228,12 @@
     flex-wrap: nowrap;
 }
 
+.pizzWichIntro{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
 .pizzWichBase{
   font-family: $font-2;
   margin-bottom: 1.5rem;
@@ -236,7 +242,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 50%;
+  width: 25%;
 
   @include mobile{
     font-size: 25px;
@@ -250,6 +256,7 @@
   color: skyblue;
   width: 20%;
   font-size: 30px;
+  font-family: $font-1;
 
   @include mobile{
     font-size: 25px;
@@ -262,6 +269,8 @@
   color: red;
   width: 20%;
   font-size: 30px;
+  margin-left: -8rem;
+  font-family: $font-2;
 
   @include mobile{
     font-size: 25px;
