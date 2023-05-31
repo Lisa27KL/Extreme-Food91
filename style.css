@@ -9,6 +9,11 @@
   }
 }
 
+.imgLeftArrow {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .mapIcon {
   text-align: center;
   width: 10rem;
@@ -123,15 +128,15 @@ body {
 
 @keyframes defilement {
   0% {
-    background-image: url("/Images/Sandwich/SandwichBanner.webp");
+    background-image: url("Images/Sandwich/SandwichBanner.webp");
     background-repeat: no-repeat;
   }
   50% {
-    background-image: url("/Images/Burgers/BurgerBanner.webp");
+    background-image: url("Images/Burgers/BurgerBanner.webp");
     background-repeat: no-repeat;
   }
   100% {
-    background-image: url("/Images/Pizza/PizzaBanner.webp");
+    background-image: url("Images/Pizza/PizzaBanner.webp");
     background-repeat: no-repeat;
   }
 }
@@ -390,8 +395,8 @@ body {
 .imgExtras,
 .imgKidsMeals,
 .imgDessert {
-  width: 11rem;
-  height: 8rem;
+  width: 10rem;
+  height: 7rem;
 }
 @media (max-width: 1200px) {
   .imgBurgers,
@@ -524,6 +529,11 @@ body {
   flex-direction: row;
   align-items: baseline;
 }
+@media (max-width: 600px) {
+  .pizzWichIntro {
+    flex-direction: column;
+  }
+}
 
 .pizzWichBase {
   font-family: "Racing Sans One", cursive;
@@ -541,6 +551,7 @@ body {
     width: 100%;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -599,10 +610,10 @@ body {
 }
 
 .imgSandwichs {
-  width: 15rem;
-  height: 7rem;
+  width: 12rem;
+  height: 6rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .imgSandwichs {
     width: 10rem;
     height: 5rem;
@@ -653,13 +664,13 @@ body {
 }
 
 .imgSalads {
-  width: 16rem;
-  height: 8rem;
+  width: 12rem;
+  height: 7rem;
 }
 @media (max-width: 600px) {
   .imgSalads {
-    width: 12rem;
-    height: 7rem;
+    width: 10rem;
+    height: 6rem;
   }
 }
 
@@ -728,9 +739,13 @@ body {
   }
 }
 
+.leftArrowContainer {
+  width: 10%;
+}
+
 .logoContainer {
   text-align: center;
-  width: 25rem;
+  width: 20rem;
 }
 @media (max-width: 600px) {
   .logoContainer {
@@ -757,15 +772,15 @@ body {
   font-size: 3.3rem;
   color: black;
 }
+@media (max-width: 1200px) {
+  .restoTitle {
+    font-size: 1.8rem;
+  }
+}
 @media (max-width: 600px) {
   .restoTitle {
     visibility: hidden;
     height: 0;
-  }
-}
-@media (max-width: 1200px) {
-  .restoTitle {
-    font-size: 1.8rem;
   }
 }
 
@@ -786,15 +801,15 @@ body {
   height: 5rem;
   width: 15rem;
 }
+@media (max-width: 1200px) {
+  .restoCard {
+    width: 9rem;
+  }
+}
 @media (max-width: 600px) {
   .restoCard {
     visibility: hidden;
     height: 0;
-  }
-}
-@media (max-width: 1200px) {
-  .restoCard {
-    width: 9rem;
   }
 }
 
@@ -812,15 +827,16 @@ body {
 
 .mapMenuContainer {
   display: flex;
-  width: 11rem;
+  width: 20%;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 600px) {
   .mapMenuContainer {
     width: 100%;
     height: 5rem;
-    flex-direction: row-reverse;
     align-items: flex-end;
   }
 }
@@ -854,17 +870,17 @@ body {
   height: 17rem;
   overflow: scroll;
 }
-@media (max-width: 600px) {
-  .restoCard:hover .menuCards {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
 @media (max-width: 1200px) {
   .restoCard:hover .menuCards {
     right: 25rem;
     width: 42rem;
     height: 15rem;
+  }
+}
+@media (max-width: 600px) {
+  .restoCard:hover .menuCards {
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
@@ -1014,6 +1030,11 @@ body {
   .logo {
     padding-top: 7px;
   }
+}
+
+.imgLeftArrow {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .mapIcon {

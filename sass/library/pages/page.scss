@@ -104,8 +104,8 @@
 .imgExtras,
 .imgKidsMeals,
 .imgDessert {
-  width: 11rem;
-  height: 8rem;
+  width: 10rem;
+  height: 7rem;
 
   @include tablet{
     width: 7rem;
@@ -232,6 +232,10 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
+
+  @include mobile{
+    flex-direction: column;
+  }
 }
 
 .pizzWichBase{
@@ -249,6 +253,7 @@
     width: 100%;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -304,10 +309,10 @@
 }
 
 .imgSandwichs {
-  width: 15rem;
-  height: 7rem;
+  width: 12rem;
+  height: 6rem;
 
-  @include tablet{
+  @include mobile{
     width: 10rem;
     height: 5rem;
   }
@@ -353,12 +358,12 @@
 
 
 .imgSalads{
-  width: 16rem;
-  height: 8rem;
+  width: 12rem;
+  height: 7rem;
 
   @include mobile{
-    width: 12rem;
-    height: 7rem;
+    width: 10rem;
+    height: 6rem;
   }
 }
 

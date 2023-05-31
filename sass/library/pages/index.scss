@@ -48,15 +48,15 @@
 
 @keyframes defilement {
   0% {
-    background-image: url("/Images/Sandwich/SandwichBanner.webp");
+    background-image: url("Images/Sandwich/SandwichBanner.webp");
     background-repeat: no-repeat;
   }
   50% {
-    background-image: url("/Images/Burgers/BurgerBanner.webp");
+    background-image: url("Images/Burgers/BurgerBanner.webp");
     background-repeat: no-repeat;
   }
   100% {
-    background-image: url("/Images/Pizza/PizzaBanner.webp");
+    background-image: url("Images/Pizza/PizzaBanner.webp");
     background-repeat: no-repeat;
   }
 }
