@@ -3,9 +3,9 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    border: 2px solid red;
-    box-shadow: 2px 1px 10px 0px black;
-    background-color: black;
+    border: 2px solid $secondary;
+    box-shadow: 2px 1px 10px 0px $cardsShadow;
+    background-color:$primary;
     height: auto;
   
     // @include mobile {
@@ -18,12 +18,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: $tertiary;
   }
 
   .footerLogo{
     width: 4rem;
-    background-color: white;
+    background-color:$tertiary;
   }
 
   .footerInfosContainer{
@@ -52,7 +52,7 @@
   .footerTitles{
     font-family: $font-2;
     font-size: 17px;
-    color: red;
+    color: $secondary;
   }
 
   .footerCard{
@@ -63,7 +63,7 @@
   .footerCardLinks{
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: $tertiary;
   }
 
   .footerReseauLogos{

@@ -13,6 +13,9 @@
   width: 2.5rem;
   height: 2.5rem;
 }
+.imgLeftArrow:hover {
+  cursor: pointer;
+}
 
 .mapIcon {
   text-align: center;
@@ -21,7 +24,6 @@
 @media (max-width: 600px) {
   .mapIcon {
     text-align: right;
-    margin-right: 1rem;
   }
 }
 
@@ -34,6 +36,8 @@
   color: white;
   border: 2px solid red;
   border-radius: 5px;
+  width: 5rem;
+  height: 2rem;
 }
 .seeMoreBtn:hover {
   background-color: white;
@@ -193,15 +197,14 @@ body {
   width: 20%;
   height: 15rem;
   background-color: white;
-  border: 4px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: -4px 3px 5px 0px rgba(0, 0, 0, 0.623);
+  box-shadow: -4px 3px 5px 0px #c7c5c5;
 }
 .mealsCards:hover {
-  box-shadow: 5px 5px 5px 0px rgba(255, 0, 0, 0.6392156863);
+  box-shadow: 2px 2px 5px 0px rgba(255, 0, 0, 0.6392156863);
   cursor: pointer;
   transform: rotate(2deg);
 }
@@ -257,11 +260,6 @@ body {
   }
 }
 
-.seeMoreBtn {
-  width: 8rem;
-  height: 2rem;
-}
-
 #burgerContainer,
 #pizzaContainer,
 #sandwichContainer,
@@ -291,7 +289,6 @@ body {
   justify-content: space-around;
   background-color: red;
   text-align: center;
-  border: 3px solid black;
   width: 30%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -356,22 +353,36 @@ body {
   width: 14rem;
   height: 16rem;
   margin-bottom: 1.3rem;
+  margin-right: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 4px solid black;
   justify-content: space-evenly;
-  box-shadow: -4px 6px 10px grey;
+  box-shadow: -1px 1px 5px 0px #c7c5c5;
 }
 @media (max-width: 1200px) {
   .burgersBlockBox {
-    width: 13rem;
-    height: 13rem;
+    width: 12rem;
+    height: 12rem;
+    margin-right: 1rem;
   }
 }
 @media (max-width: 600px) {
   .burgersBlockBox {
-    width: 90%;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.burgersBlocks4, .burgersBlocks3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .burgersBlocks4, .burgersBlocks3 {
+    justify-content: center;
   }
 }
 
@@ -406,7 +417,7 @@ body {
   .imgKidsMeals,
   .imgDessert {
     width: 7rem;
-    height: 6rem;
+    height: 5rem;
   }
 }
 
@@ -436,7 +447,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
   height: auto;
   align-items: stretch;
   align-content: space-between;
@@ -458,6 +468,12 @@ body {
   justify-content: space-evenly;
   margin-bottom: 2rem;
 }
+@media (max-width: 1200px) {
+  .menusDuos,
+  .pizzWich {
+    justify-content: space-between;
+  }
+}
 @media (max-width: 600px) {
   .menusDuos,
   .pizzWich {
@@ -470,11 +486,16 @@ body {
   font-size: 30px;
   color: red;
 }
+@media (max-width: 1200px) {
+  .menusDuosOffers {
+    font-size: 25px;
+  }
+}
 
 .menuDuoMiniTitle,
 .pizzWichMiniTitle {
   font-family: "Sriracha", cursive;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .pizzasBlockBox,
@@ -486,14 +507,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 4px solid black;
   justify-content: space-evenly;
-  box-shadow: -4px 6px 10px grey;
+  box-shadow: -4px 6px 10px #c7c5c5;
+}
+@media (max-width: 1200px) {
+  .pizzasBlockBox,
+  .sandwichsBlockBox {
+    width: 33%;
+  }
 }
 @media (max-width: 600px) {
   .pizzasBlockBox,
   .sandwichsBlockBox {
     width: 100%;
+    height: 13rem;
   }
 }
 
@@ -505,6 +532,11 @@ body {
   width: 75%;
   border: 3px dashed #ffa600;
   margin-bottom: 1rem;
+}
+@media (max-width: 1200px) {
+  .pizzaSizes {
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   .pizzaSizes {
@@ -545,6 +577,12 @@ body {
   justify-content: space-between;
   width: 25%;
 }
+@media (max-width: 1200px) {
+  .pizzWichBase {
+    width: 30%;
+    font-size: 28px;
+  }
+}
 @media (max-width: 600px) {
   .pizzWichBase {
     font-size: 25px;
@@ -561,6 +599,11 @@ body {
   font-size: 30px;
   font-family: "Kalam", cursive;
 }
+@media (max-width: 1200px) {
+  .pizzWichBaseCream {
+    font-size: 28px;
+  }
+}
 @media (max-width: 600px) {
   .pizzWichBaseCream {
     font-size: 25px;
@@ -576,11 +619,17 @@ body {
   margin-left: -8rem;
   font-family: "Racing Sans One", cursive;
 }
+@media (max-width: 1200px) {
+  .pizzWichBaseTomato {
+    font-size: 28px;
+  }
+}
 @media (max-width: 600px) {
   .pizzWichBaseTomato {
     font-size: 25px;
     width: 100%;
     text-align: center;
+    margin-bottom: 1rem;
   }
 }
 
@@ -602,16 +651,52 @@ body {
 .infosPizzWich,
 .infosSandwich,
 .infosSalad,
-.infosChips,
-.infosExtra {
+.infosChips {
   font-size: 24px;
   font-family: "Kalam", cursive;
   text-align: center;
+  overflow: auto;
+  height: 5rem;
+}
+@media (max-width: 1200px) {
+  .infosPizza,
+  .infosPizzWich,
+  .infosSandwich,
+  .infosSalad,
+  .infosChips {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .infosPizza,
+  .infosPizzWich,
+  .infosSandwich,
+  .infosSalad,
+  .infosChips {
+    height: auto;
+  }
+}
+
+.infosSalad, .infosExtra {
+  font-size: 24px;
+  font-family: "Kalam", cursive;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .infosSalad, .infosExtra {
+    font-size: 20px;
+  }
 }
 
 .imgSandwichs {
   width: 12rem;
   height: 6rem;
+}
+@media (max-width: 1200px) {
+  .imgSandwichs {
+    width: 11rem;
+    height: 4.5rem;
+  }
 }
 @media (max-width: 600px) {
   .imgSandwichs {
@@ -649,9 +734,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 4px solid black;
   justify-content: space-evenly;
-  box-shadow: -4px 6px 10px grey;
+  box-shadow: -4px 6px 10px #c7c5c5;
 }
 @media (max-width: 600px) {
   .saladsBlockBox,
@@ -684,9 +768,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 4px solid black;
   justify-content: space-evenly;
-  box-shadow: -4px 6px 10px grey;
+  box-shadow: -4px 6px 10px #c7c5c5;
 }
 @media (max-width: 1200px) {
   .extrasBlockBox,
@@ -708,7 +791,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 40%;
+  width: 50%;
 }
 
 .extrasBlocks,
@@ -742,14 +825,20 @@ body {
 .leftArrowContainer {
   width: 10%;
 }
+@media (max-width: 600px) {
+  .leftArrowContainer {
+    width: 20%;
+  }
+}
 
 .logoContainer {
   text-align: center;
-  width: 20rem;
+  width: 30%;
 }
 @media (max-width: 600px) {
   .logoContainer {
     position: absolute;
+    width: 50%;
   }
 }
 
@@ -853,7 +942,7 @@ body {
   height: 0;
   border-radius: 20px;
   border: 2px solid grey;
-  box-shadow: 4px 3px 11px 0px grey;
+  box-shadow: -3px -3px 10px 0px white;
   border-radius: 1rem;
   opacity: 0;
   position: relative;
@@ -868,7 +957,6 @@ body {
   opacity: 1;
   width: 45rem;
   height: 17rem;
-  overflow: scroll;
 }
 @media (max-width: 1200px) {
   .restoCard:hover .menuCards {
@@ -886,8 +974,8 @@ body {
 
 .cardsImgContainer {
   visibility: hidden;
-  width: 10rem;
-  height: 7rem;
+  width: 9rem;
+  height: 6rem;
   padding: 11px;
   display: flex;
   flex-direction: column-reverse;
@@ -898,10 +986,7 @@ body {
 }
 .cardsImgContainer:hover {
   visibility: visible;
-  width: 9.5rem;
-  height: 7rem;
-  border: 2px solid grey;
-  box-shadow: 4px 3px 11px 0px grey;
+  box-shadow: 4px 3px 11px 0px #c7c5c5;
   border-radius: 1rem;
   transform: scale(1.03);
   cursor: pointer;
@@ -955,7 +1040,7 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   border: 2px solid red;
-  box-shadow: 2px 1px 10px 0px black;
+  box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.623);
   background-color: black;
   height: auto;
 }
@@ -1036,6 +1121,9 @@ body {
   width: 2.5rem;
   height: 2.5rem;
 }
+.imgLeftArrow:hover {
+  cursor: pointer;
+}
 
 .mapIcon {
   text-align: center;
@@ -1044,7 +1132,6 @@ body {
 @media (max-width: 600px) {
   .mapIcon {
     text-align: right;
-    margin-right: 1rem;
   }
 }
 
@@ -1057,6 +1144,8 @@ body {
   color: white;
   border: 2px solid red;
   border-radius: 5px;
+  width: 5rem;
+  height: 2rem;
 }
 .seeMoreBtn:hover {
   background-color: white;

@@ -3,10 +3,10 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  border: 2px solid red;
-  box-shadow: 2px 1px 10px 0px black;
+  border: 2px solid $secondary;
+  box-shadow: 2px 1px 10px 0px $primary;
   position: fixed;
-  background-color: white;
+  background-color: $tertiary;
   height: 5rem;
   z-index: 1;
   @include mobile {
@@ -16,13 +16,19 @@
 
 .leftArrowContainer{
   width: 10%;
+
+  @include mobile{
+    width: 20%;
+  }
 }
 
 .logoContainer {
   text-align: center;
-  width: 20rem;
+  width: 30%;
+
   @include mobile {
     position: absolute;
+    width: 50%;
   }
 }
 
@@ -42,7 +48,7 @@
 .restoTitle {
   font-family: $font-2;
   font-size: 3.3rem;
-  color: black;
+  color: $primary;
 
   @include tablet{
     font-size: 1.8rem;
@@ -115,13 +121,13 @@
   width: 0;
   height: 0;
   border-radius: 20px;
-  border: 2px solid grey;
-  box-shadow: 4px 3px 11px 0px grey;
+  border: 2px solid $border;
+  box-shadow: -3px -3px 10px 0px $tertiary;
   border-radius: 1rem;
   opacity: 0;
   position: relative;
   top: 1.7rem;
-  background-color: white;
+  background-color: $tertiary;
   right: 35rem;
   transition: 0.4s cubic-bezier(0.51, 0.52, 0.87, 0.88);
 
@@ -133,7 +139,7 @@
   opacity: 1;
   width: 45rem;
   height: 17rem;
-  overflow: scroll;
+  // overflow: scroll;
   @include tablet{
     right: 25rem;
     width: 42rem;
@@ -148,22 +154,19 @@
 .cardsImgContainer {
   //CHANGER ICI POUR QUE CE SOIT CACHE
   visibility: hidden;
-  width: 10rem;
-  height: 7rem;
-  padding: 11px; //padding:0;
+  width: 9rem;
+  height: 6rem;
+  padding: 11px;
   display: flex;
   flex-direction: column-reverse;
   opacity: 0;
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: $primary;
 
   &:hover {
     visibility: visible;
-    width: 9.5rem;
-    height: 7rem;
-    border: 2px solid grey;
-    box-shadow: 4px 3px 11px 0px grey;
+    box-shadow: 4px 3px 11px 0px $shadow;
     border-radius: 1rem;
     transform: scale(1.03);
     cursor: pointer;
