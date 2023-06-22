@@ -1,10 +1,10 @@
 .headerContainer {
-  @include row-flexwrapNW-alignItemsC;
+  @include row-flexwrapNW-alignItemsS;
   border: 2px solid $secondary;
   box-shadow: 2px 1px 10px 0px $primary;
   position: fixed;
   background-color: $tertiary;
-  height: 13%;
+  height: 10%;
   z-index: 1;
   @include mobile {
     flex-direction: column;

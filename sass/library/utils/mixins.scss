@@ -87,6 +87,13 @@
   align-items: center;
 }
 
+@mixin row-flexwrapNW-alignItemsS{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
 @mixin row-flexWrapNW-alignItemsFE{
   display: flex;
   flex-direction: row;

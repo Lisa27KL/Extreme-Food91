@@ -13,8 +13,12 @@
   }
 
   .footerLogo{
-    width: 5.5%;
+    width: 4%;
     background-color:$tertiary;
+
+    @include mobile{
+      width: 20%;
+    }
   }
 
   .footerInfosContainer{
@@ -37,9 +41,13 @@
     }
   }
   .footerTitles{
-    font-family: $font-2;
-    font-size: 17px;
+    font-family: $font-3;
+    font-size: 25px;
     color: $secondary;
+
+    @include mobile{
+      font-size: 21px;
+    }
   }
 
   .footerCard{
@@ -47,9 +55,14 @@
   }
 
   .footerCardLinks{
+    font-size: 24px;
     list-style: none;
     text-decoration: none;
     color: $tertiary;
+
+    @include mobile{
+      font-size: 20px;
+    }
   }
 
   .footerReseauLogos{
