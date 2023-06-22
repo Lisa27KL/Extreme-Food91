@@ -1,22 +1,22 @@
 .mainContainer {
-  padding-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include column-alignItemsC;
+  // padding-top: 7.2rem;
+  padding-top: 9%;
 
-  @include mobile {
-    padding-top: 5rem;
-    // position: fixed;
+  @include tablet{
+    padding-top: 12%;
+  }
+
+  @include mobile{
+    padding-top: 40%;
   }
 }
 
 .deliciousBanner {
+  @include justContC-alignItemsC;
   background-color: $primary;
   width: 100%;
   height: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   @include mobile {
     height: 12rem;
@@ -24,22 +24,24 @@
 }
 
 .deliciousContainer {
-  width: 29rem;
-  height: 13.5rem;
+  width: 25%;
+  height: 90%;
   border: 3px solid $secondary;
   box-shadow: -4px 3px 5px 0px $primary;
   background-color: $tertiary;
   background-size: contain;
   overflow: hidden;
 
-  // @include tablet{
-  //     width: 60%;
-  // }
+  @include tablet{
+    height: 85%;
+    width: 35%;
+  }
 
   @include mobile {
-    // width: 100%;
-    height: 76%;
+    height: 85%;
+    width: 84%;
   }
+
   background-color: $tertiary;
   background-image: url("/Images/Logos/Logo-1.webp");
   background-size: contain;
@@ -64,18 +66,13 @@
 .deliciousSlides {
   width: 100%;
   height: 0;
-  padding-top: 45%;
   background-size: contain;
 }
 
 .meals {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 40rem;
-  align-items: center;
-  justify-content: space-evenly;
-
+  @include column-justContSE-alignItemsC;
   @include tablet {
     height: 30rem;
   }
@@ -88,55 +85,46 @@
 
 .mealsPart1,
 .mealsPart2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  @include row-justContSA;
   width: 80%;
+  height: auto;
 
   @include tablet {
     width: 95%;
   }
 
   @include mobile {
-    flex-direction: column;
-    align-items: center;
+    @include column-alignItemsC
   }
 
 }
 
 .mealsCards {
+  @include column-justContSE-alignItemsC;
   width: 20%;
   height: 15rem;
   background-color: $tertiary;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
   box-shadow: -4px 3px 5px 0px $shadow;
 
   &:hover {
     box-shadow: 2px 2px 5px 0px $shadowHover;
     cursor: pointer;
-    // transform: scale(1.05);
     transform: rotate(2deg);
   }
 
   @include tablet {
-    width: 10rem;
+    width: 25%;
     height: 11rem;
   }
   @include mobile {
-    width: 15rem;
+    width: 90%;
     height: 13rem;
     margin-bottom: 1rem;
   }
 }
 
 .mealsLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  @include column-justContSA-alignItemsC;
   height: 5rem;
   text-decoration: none;
   list-style: none;
@@ -152,9 +140,7 @@
 }
 
 .infosMeals {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include column-alignItemsC;
 }
 
 .mealsTitles {

@@ -1,35 +1,24 @@
 .footerContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  @include column-flexWrapNW-alignItemsC;
     border: 2px solid $secondary;
     box-shadow: 2px 1px 10px 0px $cardsShadow;
     background-color:$primary;
     height: auto;
-  
-    // @include mobile {
-    //   flex-direction: column;
-    // }
   }
 
   .footerLogoContainer{
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: $tertiary;
   }
 
   .footerLogo{
-    width: 4rem;
+    width: 5.5%;
     background-color:$tertiary;
   }
 
   .footerInfosContainer{
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
+    @include row-alignItemsS;
     padding-bottom: 15px;
     width: 95%;
     padding: 10px;
@@ -41,9 +30,7 @@
   }
 
   .footerCardContainer{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    @include column-flexWrapNW;
 
     @include mobile{
       margin-bottom: 1rem;
@@ -56,8 +43,7 @@
   }
 
   .footerCard{
-    display: flex;
-    flex-direction: column;
+    @include column-alignItemsC;
   }
 
   .footerCardLinks{
@@ -67,8 +53,5 @@
   }
 
   .footerReseauLogos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
+    @include row-flexwrapNW-alignItemsC;
   }

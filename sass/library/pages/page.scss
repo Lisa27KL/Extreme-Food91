@@ -19,12 +19,8 @@
 .chipsTitle,
 .extrasTitle,
 .kidsMealsTitle,
-.dessertTitle{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+.dessertTitle {
+  @include row-flexWrapW-justContSA-alignItemsC;
   background-color: $secondary;
   text-align: center;
   width: 30%;
@@ -34,12 +30,12 @@
   font-size: 2.5rem;
   font-family: $font-1;
 
-  @include tablet{
+  @include tablet {
     width: 50%;
     font-size: 2rem;
   }
 
-  @include mobile{
+  @include mobile {
     width: 100%;
   }
 }
@@ -48,50 +44,40 @@
 .pizzasBlocks,
 .sandwichsBlocks,
 .chipsBlocks,
-.kidsMealsBlocks{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
+.kidsMealsBlocks {
+  @include row-flexWrapW-alignContSA-justContSB;
   height: auto;
 
-  @include mobile{
+  @include mobile {
     flex-direction: column;
   }
 }
 
-.burgersBlockBox{
+.burgersBlockBox {
+  @include column-justContSE-alignItemsC;
   background-color: $tertiary;
   width: 14rem;
   height: 16rem;
   margin-bottom: 1.3rem;
   margin-right: 3.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   box-shadow: -1px 1px 5px 0px $shadow;
 
-  @include tablet{
-    width: 12rem;
+  @include tablet {
+    width: 22%;
     height: 12rem;
     margin-right: 1rem;
   }
 
-  @include mobile{
+  @include mobile {
     width: 100%;
     margin-right: 0;
   }
 }
 
-.burgersBlocks4, .burgersBlocks3{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-
-  @include mobile{
+.burgersBlocks4,
+.burgersBlocks3 {
+  @include row-flexWrapW-justContFS;
+  @include mobile {
     justify-content: center;
   }
 }
@@ -103,7 +89,7 @@
 .chipsMiniTitle,
 .extraMiniTitle,
 .kidsMealsMiniTitle,
-.dessertMiniTitle{
+.dessertMiniTitle {
   font-size: 25px;
   font-family: $font-2;
   width: 100%;
@@ -119,7 +105,7 @@
   width: 10rem;
   height: 7rem;
 
-  @include tablet{
+  @include tablet {
     width: 7rem;
     height: 5rem;
   }
@@ -134,11 +120,9 @@
 }
 
 .menusDuosContainer,
-.pizzWichContainer{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  height: auto
+.pizzWichContainer {
+  @include column-flexWrapNW;
+  height: auto;
 }
 
 .imgDrinksFries {
@@ -147,38 +131,29 @@
 }
 
 .menusDuosBox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @include row-flexWrapW-alignContSB-justContSB-alignItemsS;
   height: auto;
-  align-items: stretch;
-  align-content: space-between;
 
-  @include mobile{
+  @include mobile {
     height: auto;
     width: 100%;
   }
 }
 .menusDuos,
 .pizzWich {
+  @include column-justContSE;
   border: 3px dashed $miniCards;
   width: 23%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   margin-bottom: 2rem;
 
-  @include tablet{
+  @include tablet {
     justify-content: space-between;
   }
-  
-  @include mobile{
+
+  @include mobile {
     width: 100%;
-
   }
-
 }
 
 .menusDuosOffers {
@@ -186,7 +161,7 @@
   font-size: 30px;
   color: $secondary;
 
-  @include tablet{
+  @include tablet {
     font-size: 25px;
   }
 }
@@ -199,82 +174,68 @@
 
 .pizzasBlockBox,
 .sandwichsBlockBox {
+  @include column-justContSE-alignItemsC;
   background-color: $tertiary;
   width: 30%;
   height: 16rem;
   margin-bottom: 1.3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   box-shadow: -4px 6px 10px $shadow;
 
-  @include tablet{
+  @include tablet {
     width: 33%;
   }
 
-  @include mobile{
+  @include mobile {
     width: 100%;
     height: 13rem;
   }
 }
 
-.pizzaSizes{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-end;
+.pizzaSizes {
+  @include row-flexWrapNW-alignItemsFE;
   width: 75%;
   border: 3px dashed $miniCards;
   margin-bottom: 1rem;
 
-  @include tablet{
+  @include tablet {
     width: 100%;
   }
 
-  @include mobile{
+  @include mobile {
     width: 100%;
     flex-direction: column;
   }
 }
 
-.pizzaSizesInfos{
+.pizzaSizesInfos {
+  @include row-flexwrapNW-alignItemsC;
   font-family: $font-2;
-  color:$secondary;
+  color: $secondary;
   font-size: 30px;
   padding: 10px;
-  display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
-.pizzWichIntro{
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+.pizzWichIntro {
+  @include row-alignItemsB;
 
-  @include mobile{
+  @include mobile {
     flex-direction: column;
   }
 }
 
-.pizzWichBase{
+.pizzWichBase {
+  @include row-flexWrapNW-justContSP;
   font-family: $font-2;
   margin-bottom: 1.5rem;
   font-size: 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   width: 25%;
 
-  @include tablet{
+  @include tablet {
     width: 30%;
     font-size: 28px;
   }
 
-  @include mobile{
+  @include mobile {
     font-size: 25px;
     width: 100%;
     flex-direction: column;
@@ -283,35 +244,35 @@
   }
 }
 
-.pizzWichBaseCream{
+.pizzWichBaseCream {
   color: $cream;
   width: 20%;
   font-size: 30px;
   font-family: $font-1;
 
-  @include tablet{
+  @include tablet {
     font-size: 28px;
   }
 
-  @include mobile{
+  @include mobile {
     font-size: 25px;
     width: 100%;
     text-align: center;
   }
 }
 
-.pizzWichBaseTomato{
+.pizzWichBaseTomato {
   color: $secondary;
   width: 20%;
   font-size: 30px;
   margin-left: -8rem;
   font-family: $font-2;
 
-  @include tablet{
+  @include tablet {
     font-size: 28px;
   }
 
-  @include mobile{
+  @include mobile {
     font-size: 25px;
     width: 100%;
     text-align: center;
@@ -320,44 +281,40 @@
 }
 
 .pizzWichBox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: space-between;
+  @include row-flexWrapW-alignContSB-justContSB-alignItemsS;
 
-  @include mobile{
+  @include mobile {
     justify-content: center;
   }
-   }
+}
 
 .infosPizza,
 .infosPizzWich,
 .infosSandwich,
 .infosSalad,
-.infosChips{
+.infosChips {
   font-size: 24px;
   font-family: $font-1;
   text-align: center;
   overflow: auto;
   height: 5rem;
 
-  @include tablet{
+  @include tablet {
     font-size: 20px;
   }
 
-  @include mobile{
+  @include mobile {
     height: auto;
   }
 }
 
-.infosSalad, .infosExtra{
+.infosSalad,
+.infosExtra {
   font-size: 24px;
   font-family: $font-1;
   text-align: center;
 
-  @include tablet{
+  @include tablet {
     font-size: 20px;
   }
 }
@@ -366,12 +323,12 @@
   width: 12rem;
   height: 6rem;
 
-  @include tablet{
+  @include tablet {
     width: 11rem;
     height: 4.5rem;
   }
 
-  @include mobile{
+  @include mobile {
     width: 10rem;
     height: 5rem;
   }
@@ -379,90 +336,73 @@
 
 .saladsBlocks,
 .chipsBlocks,
-.kidsMealsBlocks{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: space-around;
-    height: auto;
+.kidsMealsBlocks {
+  @include row-flexWrapW-alignContSA-justContFS;
+  height: auto;
 
-    @include mobile{
-      justify-content: center;
-    }
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .saladsBlockBox,
 .chipsBlockBox,
-.kidsMealsBlockBox{
-      margin-right: 3rem;
-      background-color: $tertiary;
-    width: 30%;
-    height: 16rem;
-    margin-bottom: 1.3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: -4px 6px 10px $shadow;
-  
+.kidsMealsBlockBox {
+  @include column-justContSE-alignItemsC;
+  margin-right: 3rem;
+  background-color: $tertiary;
+  width: 30%;
+  height: 16rem;
+  margin-bottom: 1.3rem;
+  box-shadow: -4px 6px 10px $shadow;
 
-  @include mobile{
+  @include mobile {
     width: 100%;
     height: 14rem;
     margin-right: 0;
   }
 }
 
-
-.imgSalads{
+.imgSalads {
   width: 12rem;
   height: 7rem;
 
-  @include mobile{
+  @include mobile {
     width: 10rem;
     height: 6rem;
   }
 }
 
 .extrasBlockBox,
-.dessertsBlockBox{
+.dessertsBlockBox {
+  @include column-justContSE-alignItemsC;
   margin-right: 3rem;
   background-color: $tertiary;
-width: 28%;
-height: 17rem;
-margin-bottom: 1.3rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
-box-shadow: -4px 6px 10px $shadow;
+  width: 28%;
+  height: 17rem;
+  margin-bottom: 1.3rem;
+  box-shadow: -4px 6px 10px $shadow;
 
-@include tablet{
-  width: 30% ;
-  height: 16rem;
-  margin-right: 0;
+  @include tablet {
+    width: 30%;
+    height: 16rem;
+    margin-right: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 14rem;
+  }
 }
 
-@include mobile{
-  width: 100%;
-  height: 14rem;
-}
-}
-
-.price1, .price2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-    width: 50%;
+.price1,
+.price2 {
+  @include row-flexWrapNW;
+  width: 50%;
 }
 
 .extrasBlocks,
 .dessertsBlocks {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
+  @include row-flexWrapW-alignContSA-justContSB;
   height: auto;
 }

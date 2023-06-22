@@ -1,12 +1,167 @@
-@mixin mobile {
-    @media (max-width: 600px) {
-      @content;
-    }
-}
-  
 @mixin tablet {
     @media (max-width: 1200px) {
       @content;
     }
 }
+
+@mixin mobile {
+    @media (max-width: 425px) {
+      @content;
+    }
+}
   
+// Flex-Direction -> Row
+@mixin row-flexWrapNW{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@mixin row-flexWrapW-alignContSA-justContFS{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+}
+
+@mixin row-flexwrapW-alignContSA-justContSE {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+@mixin row-flexWrapW-alignContSA-justContSB{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+@mixin row-flexWrapW-alignContSB-justContSB-alignItemsS{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@mixin row-flexWrapNW-justContSP{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+@mixin row-flexWrapW-justContFS{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@mixin row-flexwrapNW-justContSA-alignItemsC{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin row-flexWrapW-justContSA-alignItemsC{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin row-flexwrapNW-alignItemsC{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+@mixin row-flexWrapNW-alignItemsFE{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+@mixin row-justContSA{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@mixin row-alignItemsB{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+@mixin row-alignItemsS{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+
+//Flex-Direction -> Column
+@mixin columnReverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@mixin column-flexWrapNW{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@mixin column-flexWrapNW-alignItemsC{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+@mixin column-justContSE{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@mixin column-justContSA-alignItemsC{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin column-justContSE-alignItemsC{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin column-alignItemsC{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+//Autre
+@mixin justContC-alignItemsC{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,6 @@
 .logo {
   padding-top: 10px;
-  width: 4rem;
+  width: 5rem;
   @include mobile {
     padding-top: 7px;
   }
@@ -19,9 +19,6 @@
   text-align: center;
   width: 10rem;
 
-  // @include tablet{
-  //   width: 5rem;
-  // }
   @include mobile{
     text-align: right;
   }
