@@ -24,7 +24,7 @@
 }
 
 .deliciousContainer {
-  width: 25%;
+  width: 20%;
   height: 90%;
   border: 3px solid $secondary;
   box-shadow: -4px 3px 5px 0px $primary;
@@ -131,7 +131,7 @@
 }
 
 .mealsImg {
-  width: 70%;
+  width: 60%;
   height: auto;
 
   @include mobile{
