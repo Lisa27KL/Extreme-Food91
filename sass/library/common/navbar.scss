@@ -8,11 +8,9 @@
 }
 
 .restoCard {
-  font-family: $font-1;
-  font-size: 1.5rem;
   cursor: pointer;
   height: 80%;
-  width: 80%;
+  width: 100%;
   @include tablet {
     width: 9rem;
   }
@@ -23,9 +21,13 @@
 }
 .cardTitle {
   font-family: $font-1;
-  font-size: 2.7rem;
+  font-size: 2rem;
   padding-top: 1.3rem;
   text-align: center;
+
+  @include tablet{
+    font-size: 1.5rem;
+  }
 
   @include mobile {
     padding-top: 3rem;
