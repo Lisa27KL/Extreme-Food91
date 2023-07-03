@@ -8,6 +8,7 @@
   z-index: 1;
   @include mobile {
     flex-direction: column;
+    height: 12%;
   }
 }
 

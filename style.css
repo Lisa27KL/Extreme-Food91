@@ -838,6 +838,7 @@ body {
 @media (max-width: 425px) {
   .headerContainer {
     flex-direction: column;
+    height: 12%;
   }
 }
 
