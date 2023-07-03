@@ -863,7 +863,7 @@ body {
 
 .titleContainer {
   text-align: center;
-  width: 55%;
+  width: 50%;
 }
 @media (max-width: 425px) {
   .titleContainer {
@@ -1000,7 +1000,7 @@ body {
 
 .cardContainer {
   height: 80%;
-  width: 15%;
+  width: 20%;
 }
 @media (max-width: 425px) {
   .cardContainer {
