@@ -10,15 +10,13 @@
     padding: 10px;
     text-align: center;
     background-color: $tertiary;
+    height: 5rem;
+  
   }
 
   .footerLogo{
-    width: 4%;
+    width: 4rem;
     background-color:$tertiary;
-
-    @include mobile{
-      width: 20%;
-    }
   }
 
   .footerInfosContainer{
@@ -27,6 +25,10 @@
     width: 95%;
     padding: 10px;
 
+    @include tablet{
+      flex-direction: column;
+      text-align: center;
+    }
     @include mobile{
         flex-direction: column;
         text-align: center;
@@ -65,6 +67,50 @@
     }
   }
 
+  .footerCardContactLinks{
+    @include row-justContSB-alignItemsFE;
+    font-size: 24px;
+    list-style: none;
+    text-decoration: none;
+    color: $tertiary;
+    padding-right: 5rem;
+    margin-bottom: 1.2rem;
+
+    @include tablet{
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0;
+    }
+    @include mobile{
+      flex-direction: column;
+      align-items: center;
+      font-size: 20px;
+      padding-right: 0;
+    }
+  }
+
   .footerReseauLogos{
-    @include row-flexwrapNW-alignItemsC;
+    @include column-flexWrapNW-alignItemsC;
+
+    @include tablet{
+      flex-direction: row;
+    }
+    @include mobile{
+      flex-direction: row;
+    }
+  }
+
+  .footerCardReseauLinks{
+    @include column-alignItemsFS;
+    margin-bottom: 1.2rem;
+    padding-left: 3rem;
+
+    @include tablet{
+      padding-left: 0;
+      align-items: center;
+    }
+    @include mobile{
+      padding-left: 0;
+      align-items: center;
+    }
   }

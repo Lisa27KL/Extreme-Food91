@@ -45,7 +45,7 @@
 .sandwichsBlocks,
 .chipsBlocks,
 .kidsMealsBlocks {
-  @include row-flexWrapW-alignContSA-justContSB;
+  @include row-flexWrapW-alignContSA-justContFS;
   height: auto;
 
   @include mobile {
@@ -179,6 +179,7 @@
   width: 30%;
   height: 16rem;
   margin-bottom: 1.3rem;
+  margin-right: 3rem;
   box-shadow: -4px 6px 10px $shadow;
 
   @include tablet {
@@ -224,7 +225,7 @@
 }
 
 .pizzWichBase {
-  @include row-flexWrapNW-justContSP;
+  @include row-flexWrapNW-justContSB;
   font-family: $font-2;
   margin-bottom: 1.5rem;
   font-size: 30px;

@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Racing+Sans+One&family=Sriracha&display=swap");
 .logo {
   padding-top: 10px;
-  width: 20%;
+  width: 4rem;
 }
 @media (max-width: 425px) {
   .logo {
-    width: 35%;
     padding-top: 7px;
   }
 }
@@ -48,7 +47,6 @@
 }
 
 .reseauLogos {
-  margin-top: 1rem;
   padding: 8px;
   width: 3rem;
   border: 2px solid white;
@@ -349,7 +347,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-around;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: auto;
 }
 @media (max-width: 425px) {
@@ -524,6 +522,7 @@ body {
   width: 30%;
   height: 16rem;
   margin-bottom: 1.3rem;
+  margin-right: 3rem;
   box-shadow: -4px 6px 10px #c7c5c5;
 }
 @media (max-width: 1200px) {
@@ -832,13 +831,12 @@ body {
   box-shadow: 2px 1px 10px 0px black;
   position: fixed;
   background-color: white;
-  height: 10%;
+  height: 5.5rem;
   z-index: 1;
 }
 @media (max-width: 425px) {
   .headerContainer {
     flex-direction: column;
-    height: 12%;
   }
 }
 
@@ -925,16 +923,12 @@ body {
   padding: 10px;
   text-align: center;
   background-color: white;
+  height: 5rem;
 }
 
 .footerLogo {
-  width: 4%;
+  width: 4rem;
   background-color: white;
-}
-@media (max-width: 425px) {
-  .footerLogo {
-    width: 20%;
-  }
 }
 
 .footerInfosContainer {
@@ -944,6 +938,12 @@ body {
   padding-bottom: 15px;
   width: 95%;
   padding: 10px;
+}
+@media (max-width: 1200px) {
+  .footerInfosContainer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media (max-width: 425px) {
   .footerInfosContainer {
@@ -992,11 +992,69 @@ body {
   }
 }
 
-.footerReseauLogos {
+.footerCardContactLinks {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 24px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding-right: 5rem;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 1200px) {
+  .footerCardContactLinks {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+}
+@media (max-width: 425px) {
+  .footerCardContactLinks {
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding-right: 0;
+  }
+}
+
+.footerReseauLogos {
+  display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+}
+@media (max-width: 1200px) {
+  .footerReseauLogos {
+    flex-direction: row;
+  }
+}
+@media (max-width: 425px) {
+  .footerReseauLogos {
+    flex-direction: row;
+  }
+}
+
+.footerCardReseauLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  padding-left: 3rem;
+}
+@media (max-width: 1200px) {
+  .footerCardReseauLinks {
+    padding-left: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .footerCardReseauLinks {
+    padding-left: 0;
+    align-items: center;
+  }
 }
 
 .cardContainer {
@@ -1149,11 +1207,10 @@ body {
 
 .logo {
   padding-top: 10px;
-  width: 20%;
+  width: 4rem;
 }
 @media (max-width: 425px) {
   .logo {
-    width: 35%;
     padding-top: 7px;
   }
 }
@@ -1196,7 +1253,6 @@ body {
 }
 
 .reseauLogos {
-  margin-top: 1rem;
   padding: 8px;
   width: 3rem;
   border: 2px solid white;

@@ -1,8 +1,7 @@
 .logo {
   padding-top: 10px;
-  width: 20%;
+  width: 4rem;
   @include mobile {
-    width: 35%;
     padding-top: 7px;
   }
 }
@@ -45,7 +44,6 @@
 }
 
 .reseauLogos{
-  margin-top: 1rem;
   padding: 8px;
   width: 3rem;
   border: 2px solid $tertiary;
