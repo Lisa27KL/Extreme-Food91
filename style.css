@@ -899,7 +899,12 @@ body {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 10%;
+  width: 20%;
+}
+@media (max-width: 1200px) {
+  .mapMenuContainer {
+    width: 30%;
+  }
 }
 @media (max-width: 425px) {
   .mapMenuContainer {

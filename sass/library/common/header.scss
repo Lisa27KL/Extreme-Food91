@@ -59,7 +59,11 @@
 
 .mapMenuContainer {
   @include row-flexwrapNW-justContSA-alignItemsC;
-  width: 10%;
+  width: 20%;
+
+  @include tablet{
+    width: 30%;
+  }
 
   @include mobile {
     width: 100%;
